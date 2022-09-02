@@ -1,0 +1,38 @@
+:root {
+    /* clolor */
+    --base-color: #f7ccac;
+    --point-color: #826f66;
+    --dark-color: #3a3845;
+
+    /* font size */
+    --operators-size: 20px;
+    --status-size: 22px;
+    --small-size: 15px
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--dark-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.calculator {
+    background-color: var(--base-color);
+    border-radius: 10px;
+    width: 500px;
+    height: 800px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
