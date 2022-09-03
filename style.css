@@ -5,9 +5,9 @@
     --dark-color: #3a3845;
 
     /* font size */
-    --operators-size: 20px;
-    --status-size: 22px;
-    --small-size: 15px
+    --operators-size: 40px;
+    --status-size: 30px;
+    --small-size: 20px
 }
 
 * {
@@ -21,8 +21,25 @@ body {
     background-color: var(--dark-color);
 }
 
-ul {
-    list-style: none;
+.nav {
+    display: flex;
+}
+
+.nav i {
+    font-size: var(--status-size);
+}
+
+.nav span {
+    font-size: var(--operators-size);
+    text-align: center;
+}
+
+input {
+    width: 450px;
+    height: 200px;
+    font-size: var(--status-size);
+    margin: 0;
+    padding: 0;
 }
 
 .calculator {
@@ -35,4 +52,13 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 70px;
 }
+
+button {
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+
+/* 제목 가운데로 옮기기, 숫자 패드 색  입히기, 버튼 크기 맞추기 /*
