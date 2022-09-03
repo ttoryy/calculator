@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <script src="https://kit.fontawesome.com/670098288e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,58 +14,54 @@
     <link rel="stylesheet" href="style.css">
     <title>calculators</title>
 </head>
+
 <body>
     <div class="calculator">
-    <ul class="nav">
-        <li><i class="fa-light fa-bars-sort"></i></li>
-        <li>calculator</li>
-    </ul>
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><button class="clear"> C </button></td>
-                <td><button class="bracket"> ( </button></td>
-                <td><button class="bracket"> ) </button></td>
-                <td><button class="erase"><i class="fa-light fa-delete-left"></i></button></td>
-            </tr>
+        <div class="nav">
+            <i class="fa-solid fa-bars"></i>
+            <h6>calculator</h6>
+        </div>
 
-            <tr>
-                <td><button class="digit"> 7 </button></td>
-                <td><button class="digit"> 8 </button></td>
-                <td><button class="digit"> 9 </button></td>
-                <td><button class="opertaor"><i class="fa-regular fa-divide"></i></button></td>
-            </tr>
+        <div class="display">
+            <input type="text" disabled size="70px">
+        </div>
 
-            <tr>
-                <td><button class="digit"> 4 </button></td>
-                <td><button class="digit"> 4 </button></td>
-                <td><button class="digit"> 6 </button></td>
-                <td><button class="opertaor"> X </button></td>
-            </tr>
+        <div class="operators">
+            <div>
+                <button class="clear"> C </button>
+                <button class="bracket"> ( </button>
+                <button class="bracket"> ) </button>
+                <button class="erase"><i class="fa-solid fa-delete-left"></i></button>
+            </div>
 
-            <tr>
-                <td><button class="digit"> 1 </button></td>
-                <td><button class="digit"> 2 </button></td>
-                <td><button class="digit"> 2 </button></td>
-                <td><button class="digit"> - </button></td>
-            </tr>
+            <div>
+                <button class="digit"> 7 </button>
+                <button class="digit"> 8 </button>
+                <button class="digit"> 9 </button>
+                <button class="opertaor"><i class="fa-solid fa-divide"></i></button>
+            </div>
 
-            <tr>
-                <td><button class="dot"> . </button></td>
-                <td><button class="digit"> 0 </button></td>
-                <td><button class="operator"> = </button></td>
-                <td><button class="operator"> + </button></td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
+            <div>
+                <button class="digit"> 5 </button>
+                <button class="digit"> 4 </button>
+                <button class="digit"> 6 </button>
+                <button class="opertaor"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div>
+                <button class="digit"> 1 </button>
+                <button class="digit"> 2 </button>
+                <button class="digit"> 3 </button>
+                <button class="digit"><i class="fa-solid fa-minus"></i></button>
+            </div>
+
+            <div>
+                <button class="dot"> . </button>
+                <button class="digit"> 0 </button>
+                <button class="operator"><i class="fa-solid fa-equals"></i></button>
+                <button class="operator"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
 </body>
+
 </html>
