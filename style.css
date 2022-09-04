@@ -17,33 +17,40 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 body {
     background-color: var(--dark-color);
 }
 
 .nav {
     display: flex;
+    align-items: center;
 }
 
 .nav i {
     font-size: var(--status-size);
 }
 
-.nav span {
-    font-size: var(--operators-size);
-    text-align: center;
+.nav p {
+    font-size: 40px;
+    padding-left: 115px;
 }
 
 input {
     width: 450px;
-    height: 200px;
+    height: 250px;
     font-size: var(--status-size);
+    background-color: var(--base-color);
+    border: 0;
+
     margin: 0;
     padding: 0;
 }
 
 .calculator {
     background-color: var(--base-color);
+    color: var(--dark-color);
     border-radius: 10px;
     width: 500px;
     height: 800px;
@@ -52,13 +59,18 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 70px;
+    font-size: 60px;
 }
 
 button {
     width: 100px;
-    height: 40px;
+    height: 65px;
     border: none;
+    color: var(--base-color);
+    font-size: 20px;
+    background-color: var(--dark-color);
+    border-radius: 10px;
+
 }
 
-/* 제목 가운데로 옮기기, 숫자 패드 색  입히기, 버튼 크기 맞추기 /*
+/* 클래스 대로 버튼 색입히기, js 추가 */
