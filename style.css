@@ -17,40 +17,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 body {
     background-color: var(--dark-color);
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav i {
-    font-size: var(--status-size);
-}
-
-.nav p {
-    font-size: 40px;
-    padding-left: 115px;
-}
-
-input {
-    width: 450px;
-    height: 250px;
-    font-size: var(--status-size);
-    background-color: var(--base-color);
-    border: 0;
-
-    margin: 0;
-    padding: 0;
-}
-
 .calculator {
     background-color: var(--base-color);
-    color: var(--dark-color);
     border-radius: 10px;
     width: 500px;
     height: 800px;
@@ -62,15 +34,50 @@ input {
     font-size: 60px;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav i {
+    font-size: var(--status-size);
+    color: var(--dark-color);
+}
+
+.nav p {
+    font-size: 40px;
+    padding-left: 115px;
+    color: var(--dark-color);
+}
+
+input {
+    width: 450px;
+    height: 250px;
+    font-size: var(--status-size);
+    color: var(--dark-color);
+    background-color: var(--base-color);
+    border: none;
+    text-align: right;
+    font-size: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
 button {
     width: 100px;
     height: 65px;
     border: none;
-    color: var(--base-color);
     font-size: 20px;
-    background-color: var(--dark-color);
     border-radius: 10px;
-
+    color: var(--base-color);
+    background-color: var(--dark-color);
+    cursor: pointer;
 }
 
 /* 클래스 대로 버튼 색입히기, js 추가 */
