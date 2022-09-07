@@ -3,6 +3,7 @@
     --base-color: #f7ccac;
     --point-color: #826f66;
     --dark-color: #3a3845;
+    --hover-color: #838388;
 
     /* font size */
     --operators-size: 40px;
@@ -34,20 +35,10 @@ body {
     font-size: 60px;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav i {
-    font-size: var(--status-size);
+p {
     color: var(--dark-color);
-}
-
-.nav p {
-    font-size: 40px;
-    padding-left: 115px;
-    color: var(--dark-color);
+    font-size: var(--operators-size);
+    padding-left: 140px;
 }
 
 .display {
@@ -69,6 +60,10 @@ body {
     color: var(--base-color);
     background-color: var(--dark-color);
     cursor: pointer;
+}
+
+.calculator__button input:hover {
+    background-color: var(--hover-color);
 }
 
 .calculator__button #line {
