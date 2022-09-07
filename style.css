@@ -6,7 +6,7 @@
 
     /* font size */
     --operators-size: 40px;
-    --status-size: 30px;
+    --status-size: 60px;
     --small-size: 20px
 }
 
@@ -50,7 +50,7 @@ body {
     color: var(--dark-color);
 }
 
-input {
+.display {
     width: 450px;
     height: 250px;
     font-size: var(--status-size);
@@ -58,20 +58,11 @@ input {
     background-color: var(--base-color);
     border: none;
     text-align: right;
-    font-size: 20px;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
-}
-
-button {
+.calculator__button input {
     width: 100px;
-    height: 65px;
+    height: 70px;
     border: none;
     font-size: 20px;
     border-radius: 10px;
@@ -80,4 +71,29 @@ button {
     cursor: pointer;
 }
 
-/* 클래스 대로 버튼 색입히기, js 추가 */
+.calculator__button #line {
+    display: flex;
+}
+
+#all_clear {
+    margin-right: 5px;
+}
+
+#erase {
+    margin-left: 5px;
+}
+
+.calculator__button #line input {
+    flex-grow: 1;
+    color: var(--base-color);
+    background-color: var(--point-color);
+}
+
+.calculator__button #divide,
+#times,
+#minus,
+#plus,
+#equal {
+    color: var(--base-color);
+    background-color: var(--point-color);
+}

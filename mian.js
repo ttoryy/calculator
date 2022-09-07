@@ -1,12 +1,51 @@
 'use strict';
-//1. digit btns 클릭 시 숫자 display에 나오게 하기 <
-//2. 연산자 함수 <
-//3. operator btns 클릭 시 display는 빈 화면으로 출력되고
-//   연산자 함수를 이용하여 계산하게 됨
-//   '=' 버튼 클릭시 계산 결과 보여줌 
-//4. clear btn 클릭 시 display 리셋되기 <
 
-const calculator = document.querySelector('.calculator');
-const buttons = document.querySelector('.calculator__button');
-const display = document.querySelector('.input');
-const operator = document.querySelector('calculator__operator');
+let num = 0;
+let symbol;
+
+//숫자 입력
+function add(a) {
+    display.value += a;
+}
+
+//계산 값 입력
+function cal(b) {
+    let firstNum = (document.getElementById("display").value);
+    num = firstNum;
+    symbol = b;
+    return document.getElementById("display").value = "";
+}
+
+//연산 입력
+function result() {
+    let secNum = parseFloat(document.getElementById("display").value);
+    let result;
+    switch (symbol) {
+        case '+': result = Number(num) + Number(secNum);
+            document.getElementById("display").value = result;
+            break;
+        case '-': result = Number(num) - Number(secNum);
+            document.getElementById("display").value = result;
+            break;
+        case '*': result = Number(num) * Number(secNum);
+            document.getElementById("display").value = result;
+            break;
+        case '/': result = Number(num) / Number(secNum);
+            document.getElementById("display").value = result;
+            break;
+        case '%': result = Number(num) % Number(secNum);
+            document.getElementById("display").value = result;
+            break;
+    }
+}
+
+//AC 
+function reset() {
+    document.getElementById("display").value = "";
+    num = 0;
+}
+
+//DEL
+function erase() {
+    display.value = display.value.substring(0, display.value.length - 1);
+}

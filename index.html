@@ -22,45 +22,40 @@
             <p>calculator</p>
         </div>
 
-        <div class="display">
-            <input type="text" disabled size="70px">
+        <div>
+            <input class="display" id="display" type="text" disabled>
         </div>
 
-        <div class="calculator__button">
-            <div class="line">
-                <button class="clear"> C </button>
-                <button class="bracket"> ( </button>
-                <button class="bracket"> ) </button>
-                <button class="erase"><i class="fa-solid fa-delete-left"></i></button>
+        <div class="calculator__button" id="buttons">
+            <div id="line">
+                <input type="button" value="AC" onclick="reset()" id="all_clear">
+                <input type="button" value=DEL onclick="erase()" id="erase">
             </div>
 
-            <div class="line">
-                <button class="digit"> 7 </button>
-                <button class="digit"> 8 </button>
-                <button class="digit"> 9 </button>
-                <button class="opertaor"><i class="fa-solid fa-divide"></i></button>
+            <div>
+                <input type="button" value="7" onclick="add(7)" id="7">
+                <input type="button" value="8" onclick="add(8)" id="8">
+                <input type="button" value="9" onclick="add(9)" id="9">
+                <input type="button" value="/" onclick="cal('/')" id="divide">
             </div>
 
-            <div class="line">
-                <button class="digit"> 5 </button>
-                <button class="digit"> 4 </button>
-                <button class="digit"> 6 </button>
-                <button class="opertaor"><i class="fa-solid fa-xmark"></i></button>
+            <div>
+                <input type="button" value="4" onclick="add(5)" id="digit">
+                <input type="button" value="5" onclick="add(4)" id="digit">
+                <input type="button" value="6" onclick="add(6)" id="digit">
+                <input type="button" value="*" onclick="cal('*')" id="times">
             </div>
 
-            <div class="line">
-                <button class="digit"> 1 </button>
-                <button class="digit"> 2 </button>
-                <button class="digit"> 3 </button>
-                <button class="digit"><i class="fa-solid fa-minus"></i></button>
+            <div>
+                <input type="button" value="1" onclick="add(1)" id="digit">
+                <input type="button" value="2" onclick="add(2)" id="digit">
+                <input type="button" value="3" onclick="add(3)" id="digit">
+                <input type="button" value="-" onclick="cal('-')" id="minus">
             </div>
-
-            <div class="line">
-                <button class="dot"> . </button>
-                <button class="digit"> 0 </button>
-                <button class="operator"><i class="fa-solid fa-equals"></i></button>
-                <button class="operator"><i class="fa-solid fa-plus"></i></button>
-            </div>
+            <input type="button" value="." onclick="add('.')" id="dot">
+            <input type="button" value="0" onclick="add(0)" id="digit">
+            <input type="button" value="=" onclick="result()" id="equal">
+            <input type="button" value="+" onclick="cal('+')" id="plus">
         </div>
 </body>
 
